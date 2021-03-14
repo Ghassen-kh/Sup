@@ -20,8 +20,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Group root = new Group();
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        /*Group root = new Group();
         Text txt= new Text("Ghassen!");
         txt.setFont(new Font("Papurus",40));
         TextField nameFld = new TextField();
@@ -40,7 +40,7 @@ public class Main extends Application {
         txt.setY(50);
         VBox box = new VBox();
         box.getChildren().addAll(txt,grid);
-        root.getChildren().add(box);
+        root.getChildren().add(box);*/
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
