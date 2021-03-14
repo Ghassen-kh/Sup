@@ -6,14 +6,14 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.TextField?>
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml"
-          style="-fx-font-family:Papyrus;-fx-alignment:centre;-fx-hgap:10;-fx-vgap:10">
+          stylesheets="/css/sample.css"
+          xmlns:fx="http://javafx.com/fxml">
 
-    <Text text="Ghassen App"
-          GridPane.rowIndex="0"
-          GridPane.columnSpan="2"
-          GridPane.halignment="CENTER"
-          style="-fx-font-size: 40px; -fx-fill:AQUA"/>
+    <Text  styleClass="title"
+           text="Ghassen App"
+           GridPane.rowIndex="0"
+           GridPane.columnSpan="2"
+           GridPane.halignment="CENTER"/>
 
     <Label text="First Name:"
            GridPane.rowIndex="1"
@@ -24,7 +24,7 @@
             GridPane.columnIndex="1"
             GridPane.rowIndex="1"/>
 
-    <Button text="Say Ghassen!"
+    <Button text="Say Hello name!"
             onAction="#handelSayGhassen"
             GridPane.rowIndex="2"
             GridPane.columnIndex="1"
